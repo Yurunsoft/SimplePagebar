@@ -1,0 +1,29 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Demo</title>
+    <script src="jquery/jquery-1.12.3.min.js"></script>
+	<!-- 在服务器下可以不需要手动引用css文件 -->
+    <link rel="stylesheet" href="../release/SimplePagebar.css"/>
+    <script src="../release/SimplePagebar.js"></script>
+</head>
+<body>
+    <script>
+		function pageChange(e)
+		{
+            if(e.isChanged)
+            {
+                // TODO:分页
+				$('#TextboxLog').append('当前页码:'+e.page+"\n");
+            }
+		}
+        var sp = new SimplePagebar({
+            container : $('body'),
+            pages:10,
+			onPageChange:pageChange
+        });
+        sp.display();
+    </script>
+	<textarea id="TextboxLog" style="width:100%;height:500px"></textarea>
+</body>
+</html>
