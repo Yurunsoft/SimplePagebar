@@ -1,0 +1,13 @@
+{
+  "name": "SimplePagebar",
+  "version": "1.0.0",
+  "description": "一个简单的分页条，支持首页、末页、上一页、下一页、自定义页码切换。",
+  "author": "Yurun",
+  "homepage": "http://www.yurunsoft.com",
+  "dependencies": {
+
+  },
+  "devDependencies": {
+    "concurrently": "^2.0.0"
+  }
+}
